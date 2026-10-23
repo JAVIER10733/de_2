@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0A0A0A">
+    <meta name="color-scheme" content="dark">
+    
+    <title>Para Ti, Mi Persona Favorita | Dedicatoria de Javier</title>
+    <meta name="description" content="Un universo de razones por las que te amo. Una dedicatoria interactiva hecha con el corazón, desde Ventanas hasta el infinito.">
+    <meta name="author" content="Javier">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tengo algo muy especial que decirte... 💌">
+    <meta property="og:description" content="Abre este mensaje. He guardado aquí todo lo que mi corazón no alcanza a decirte en persona.">
+    <meta property="og:locale" content="es_ES">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/extras.css">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+
+    <style>
+        /* ========================================
+           VARIABLES Y ESTILOS BASE
+           ======================================== */
+        :root {
+            --snoopy-red: #C41E3A;
+            --snoopy-red-light: #E8384F;
+            --snoopy-red-glow: rgba(196, 30, 58, 0.5);
+            --woodstock-yellow: #FFD700;
+            --color-cream: #F5F1E8;
+            --color-cream-dark: #D4CFC4;
+            --color-black: #0A0A0A;
+            --color-dark-gray: #1A1A1A;
+            --glass-bg: rgba(26, 26, 26, 0.7);
+            --glass-border: rgba(245, 241, 232, 0.1);
+            --glass-blur: blur(20px);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0A0A0A 0%, #121212 50%, #1A1A1A 100%);
+            color: var(--color-cream);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .romantic-font { font-family: 'Dancing Script', cursive; }
+        .elegant-font { font-family: 'Playfair Display', serif; }
+        .handwriting-font { font-family: 'Caveat', cursive; }
+
+        /* ========================================
+           EFECTOS GLOBALES
+           ======================================== */
+        .glow-text {
+            text-shadow: 0 0 15px rgba(255, 77, 109, 0.6);
+            animation: pulse-glow 3s infinite alternate;
+        }
+        @keyframes pulse-glow {
+            from { text-shadow: 0 0 10px rgba(255, 77, 109, 0.4); }
+            to { text-shadow: 0 0 25px rgba(255, 77, 109, 0.8), 0 0 40px rgba(201, 24, 74, 0.6); }
+        }
+
+        .heartbeat { 
+            display: inline-block; 
+            animation: heartbeat 1.5s ease-in-out infinite; 
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            14% { transform: scale(1.15); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.15); }
+            70% { transform: scale(1); }
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 24px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(255, 77, 109, 0.2);
+            border-color: rgba(255, 77, 109, 0.3);
+        }
+
+        /* ========================================
+           SECCIONES GENERALES
+           ======================================== */
+        section {
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-number {
+            font-family: 'Caveat', cursive;
+            font-size: 1rem;
+            color: var(--snoopy-red);
+            letter-spacing: 0.3em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--color-cream);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            font-family: 'Caveat', cursive;
+            font-size: 1.3rem;
+            color: var(--color-cream-dark);
+        }
+
+        /* ========================================
+           HERO
+           ======================================== */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-pretitle {
+            font-family: 'Caveat', cursive;
+            font-size: 1.3rem;
+            color: var(--color-cream-dark);
+            letter-spacing: 0.2em;
+            margin-bottom: 20px;
+        }
+
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 10vw, 7rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--color-cream) 0%, #fff 50%, var(--color-cream) 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 4s linear infinite;
+        }
+
+        @keyframes shimmer {
+            to { background-position: 200% center; }
+        }
+
+        .subtitle {
+            font-family: 'Caveat', cursive;
+            font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+            color: var(--color-cream-dark);
+            margin-bottom: 40px;
+        }
+
+        .special-date-container {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 20px 40px;
+        }
+
+        .special-date-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .special-date-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--color-cream);
+            font-weight: 600;
+        }
+
+        .special-date-subtext {
+            font-family: 'Caveat', cursive;
+            font-size: 1.1rem;
+            color: var(--color-cream-dark);
+            font-style: italic;
+        }
+
+        .hero-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .divider-line {
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--snoopy-red), transparent);
+        }
+
+        .divider-heart {
+            color: var(--snoopy-red);
+            font-size: 1.5rem;
+        }
+
+        /* ========================================
+           CONTADOR
+           ======================================== */
+        .counter-section {
+            background: linear-gradient(180deg, var(--color-black) 0%, var(--color-dark-gray) 100%);
+            text-align: center;
+        }
+
+        .counter-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .counter-item {
+            padding: 30px 20px;
+        }
+
+        .counter-number {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--snoopy-red);
+            font-weight: 700;
+            display: block;
+            line-height: 1;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px var(--snoopy-red-glow);
+        }
+
+        .counter-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: var(--color-cream-dark);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        .counter-subtitle {
+            font-family: 'Caveat', cursive;
+            font-size: 1.5rem;
+            color: var(--color-cream-dark);
+            margin-top: 20px;
+        }
+
+        /* ========================================
+           POEMA
+           ======================================== */
+        .poem-section {
+            background: linear-gradient(180deg, var(--color-dark-gray) 0%, var(--color-black) 100%);
+        }
+
+        .poem-container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        .poem-text p {
+            font-size: 1.2rem;
+            line-height: 2;
+            color: var(--color-cream-dark);
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .poem-text p:first-of-type::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            float: left;
+            line-height: 0.8;
+            padding-right: 15px;
+            padding-top: 10px;
+            color: var(--snoopy-red);
+            font-weight: 700;
+        }
+
+        .poem-footer {
+            margin-top: 40px;
+            text-align: right;
+        }
+
+        .signature {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
+        .signature-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.6rem;
+            color: var(--color-cream);
+        }
+
+        .signature-heart {
+            color: var(--snoopy-red);
+            font-size: 1.8rem;
+        }
+
+        /* ========================================
+           RAZONES
+           ======================================== */
+        .reasons-section {
+            background: linear-gradient(180deg, var(--color-black) 0%, var(--color-dark-gray) 100%);
+        }
+
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .reason-card {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .reason-icon {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .reason-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--color-cream);
+            margin-bottom: 10px;
+        }
+
+        .reason-card p {
+            font-size: 1rem;
+            color: var(--color-cream-dark);
+            line-height: 1.6;
+        }
+
+        /* ========================================
+           GALERÍA CON FLIP 3D (MEJORADO)
+           ======================================== */
+        .gallery-section {
+            background: linear-gradient(180deg, var(--color-dark-gray) 0%, var(--color-black) 100%);
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* La tarjeta contenedora con perspectiva 3D */
+        .photo-card {
+            perspective: 1500px;
+            height: 480px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* El contenedor interno que rota */
+        .photo-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+            transform-style: preserve-3d;
+        }
+
+        /* Cuando está volteada */
+        .photo-card.flipped .photo-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Cara frontal y trasera */
+        .photo-front, .photo-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Frente: la foto */
+        .photo-front {
+            background: var(--color-dark-gray);
+            z-index: 2;
+        }
+
+        .photo-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        .photo-card:hover .photo-front img {
+            transform: scale(1.05);
+        }
+
+        .photo-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 60px 30px 30px;
+            background: linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.6) 60%, transparent 100%);
+            color: var(--color-cream);
+            font-family: 'Caveat', cursive;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        .photo-overlay::before {
+            content: '👆 Toca para descubrir el mensaje';
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--snoopy-red-light);
+            margin-bottom: 8px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        /* Reverso: el mensaje */
+        .photo-back {
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #1a0a10 0%, #2d1520 50%, #1a0a10 100%);
+            border: 2px solid var(--snoopy-red);
+            position: relative;
+        }
+
+        /* Borde brillante animado */
+        .photo-back::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 22px;
+            background: conic-gradient(from 0deg, transparent 0%, var(--snoopy-red) 25%, transparent 50%, var(--woodstock-yellow) 75%, transparent 100%);
+            animation: rotateBorder 4s linear infinite;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        @keyframes rotateBorder {
+            to { transform: rotate(360deg); }
+        }
+
+        .photo-back::after {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: linear-gradient(135deg, #1a0a10 0%, #2d1520 100%);
+            border-radius: 18px;
+            z-index: -1;
+        }
+
+        .poem-mini {
+            font-family: 'Caveat', cursive;
+            font-size: 1.6rem;
+            color: var(--color-cream);
+            text-align: center;
+            line-height: 1.8;
+            position: relative;
+            font-weight: 500;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+
+        .poem-quote {
+            font-size: 4rem;
+            color: var(--woodstock-yellow);
+            display: block;
+            line-height: 0.8;
+            margin: 10px 0;
+            font-family: 'Playfair Display', serif;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        }
+
+        .poem-mini p {
+            margin: 15px 0;
+        }
+
+        /* Placeholder si la foto no carga */
+        .photo-fallback {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a0a10 0%, #2d1520 100%);
+            color: var(--snoopy-red);
+            font-size: 5rem;
+            position: relative;
+        }
+
+        .photo-fallback::after {
+            content: 'Aún no hay foto aquí';
+            position: absolute;
+            bottom: 30px;
+            font-size: 0.9rem;
+            color: var(--color-cream-dark);
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.1em;
+        }
+
+        /* ========================================
+           PROMESAS
+           ======================================== */
+        .promises-section {
+            background: linear-gradient(180deg, var(--color-black) 0%, var(--color-dark-gray) 100%);
+        }
+
+        .promises-list {
+            list-style: none;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .promise-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            border-left: 3px solid var(--snoopy-red);
+            transition: all 0.3s ease;
+        }
+
+        .promise-item:hover {
+            transform: translateX(10px);
+            background: rgba(196, 30, 58, 0.05);
+        }
+
+        .promise-check {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .promise-text {
+            font-size: 1.1rem;
+            color: var(--color-cream);
+            line-height: 1.6;
+        }
+
+        /* ========================================
+           HISTORIA (TIMELINE)
+           ======================================== */
+        .timeline-section {
+            background: linear-gradient(180deg, var(--color-dark-gray) 0%, var(--color-black) 100%);
+        }
+
+        .timeline {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, transparent 0%, var(--snoopy-red) 20%, var(--snoopy-red) 80%, transparent 100%);
+            transform: translateX(-50%);
+            box-shadow: 0 0 20px var(--snoopy-red-glow);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .timeline-item:nth-child(odd) { flex-direction: row; }
+        .timeline-item:nth-child(even) { flex-direction: row-reverse; }
+
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: var(--snoopy-red);
+            border: 4px solid var(--color-cream);
+            border-radius: 50%;
+            z-index: 2;
+            box-shadow: 0 0 30px var(--snoopy-red-glow);
+        }
+
+        .timeline-content {
+            width: 42%;
+            padding: 25px;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content { margin-right: auto; margin-left: 5%; }
+        .timeline-item:nth-child(even) .timeline-content { margin-left: auto; margin-right: 5%; }
+
+        .timeline-date {
+            font-family: 'Caveat', cursive;
+            font-size: 1.1rem;
+            color: var(--snoopy-red);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .timeline-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--color-cream);
+            margin-bottom: 10px;
+        }
+
+        .timeline-text {
+            font-size: 1rem;
+            color: var(--color-cream-dark);
+            line-height: 1.7;
+        }
+
+        /* ========================================
+           CARTA
+           ======================================== */
+        .letter-section {
+            background: linear-gradient(180deg, var(--color-black) 0%, var(--color-dark-gray) 100%);
+            text-align: center;
+        }
+
+        .envelope-container {
+            max-width: 650px;
+            margin: 0 auto;
+            perspective: 1500px;
+            cursor: pointer;
+        }
+
+        .envelope {
+            position: relative;
+            width: 100%;
+            height: 450px;
+        }
+
+        .envelope-body {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 320px;
+            background: linear-gradient(135deg, var(--color-dark-gray) 0%, #2a2a2a 100%);
+            border: 2px solid var(--snoopy-red);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+        }
+
+        .envelope-flap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(135deg, var(--snoopy-red) 0%, var(--snoopy-red-light) 100%);
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            transform-origin: top;
+            z-index: 3;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .envelope.open .envelope-flap {
+            transform: rotateX(180deg);
+        }
+
+        .letter {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92%;
+            height: 300px;
+            background: linear-gradient(135deg, var(--color-cream) 0%, #EDE8DC 100%);
+            border-radius: 8px;
+            padding: 40px;
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 2;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .envelope.open .letter {
+            transform: translateX(-50%) translateY(-180px);
+        }
+
+        .letter-content {
+            color: var(--color-dark-gray);
+            text-align: left;
+        }
+
+        .letter-greeting {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--snoopy-red);
+            font-weight: 600;
+        }
+
+        .letter-text {
+            font-family: 'Caveat', cursive;
+            font-size: 1.3rem;
+            line-height: 2;
+            margin-bottom: 15px;
+        }
+
+        .letter-closing {
+            font-family: 'Caveat', cursive;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            font-weight: 500;
+        }
+
+        .letter-signature {
+            display: block;
+            margin-top: 15px;
+            color: var(--snoopy-red);
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        /* ========================================
+           RESPUESTA FINAL
+           ======================================== */
+        .dark-section {
+            background: linear-gradient(180deg, var(--color-dark-gray) 0%, var(--color-black) 100%);
+        }
+
+        .interactive-section {
+            text-align: center;
+        }
+
+        .answer-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .answer-prompt {
+            font-family: 'Caveat', cursive;
+            font-size: 1.5rem;
+            color: var(--color-cream-dark);
+            margin-bottom: 30px;
+        }
+
+        .answer-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .answer-btn {
+            padding: 18px;
+            border-radius: 12px;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-love {
+            background: linear-gradient(135deg, #ff4d6d, #c9184a);
+            color: white;
+        }
+
+        .btn-love:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 77, 109, 0.5);
+        }
+
+        .btn-think, .btn-friend {
+            background: rgba(255,255,255,0.05);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .btn-think:hover, .btn-friend:hover {
+            background: rgba(255,255,255,0.1);
+            transform: scale(1.02);
+        }
+
+        .answer-feedback {
+            margin-top: 30px;
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+            animation: fadeInUp 0.5s ease;
+        }
+
+        .answer-feedback p {
+            font-family: 'Caveat', cursive;
+            font-size: 1.6rem;
+            color: var(--color-cream);
+            margin-bottom: 20px;
+        }
+
+        .wa-box {
+            margin-top: 20px;
+        }
+
+        .wa-box textarea {
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(0,0,0,0.3);
+            color: white;
+            font-family: 'Caveat', cursive;
+            font-size: 1.2rem;
+            resize: vertical;
+            min-height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .wa-box textarea:focus {
+            outline: none;
+            border-color: var(--snoopy-red);
+        }
+
+        /* ========================================
+           MENSAJE FINAL
+           ======================================== */
+        .final-message {
+            background: linear-gradient(180deg, var(--color-black) 0%, var(--color-dark-gray) 100%);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .message-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .final-line {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            color: var(--color-cream);
+            margin-bottom: 20px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .final-line.highlight {
+            color: var(--snoopy-red);
+            font-weight: 700;
+            margin-top: 30px;
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+        }
+
+        .final-quote {
+            font-family: 'Caveat', cursive;
+            font-size: 1.8rem;
+            color: var(--color-cream-dark);
+            margin: 40px 0;
+            font-style: italic;
+        }
+
+        .final-signature {
+            margin-top: 40px;
+        }
+
+        .signature-name {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--snoopy-red);
+            margin-bottom: 10px;
+        }
+
+        .signature-date {
+            font-family: 'Caveat', cursive;
+            font-size: 1.2rem;
+            color: var(--color-cream-dark);
+        }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .site-footer {
+            background: var(--color-black);
+            border-top: 1px solid var(--glass-border);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .footer-heart {
+            font-size: 2.5rem;
+            color: var(--snoopy-red);
+            margin-bottom: 20px;
+        }
+
+        .footer-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--color-cream);
+            margin-bottom: 10px;
+        }
+
+        .footer-disclaimer {
+            font-family: 'Caveat', cursive;
+            font-size: 1.1rem;
+            color: var(--color-cream-dark);
+        }
+
+        .footer-link {
+            display: inline-block;
+            color: var(--snoopy-red);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border: 1px solid var(--snoopy-red);
+            border-radius: 30px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link:hover {
+            background: var(--snoopy-red);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* ========================================
+           BOTÓN VOLVER ARRIBA
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--snoopy-red);
+            border: none;
+            color: white;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.5);
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top.visible {
+            display: flex;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 30px rgba(196, 30, 58, 0.7);
+        }
+
+        /* ========================================
+           MODAL DE BIENVENIDA
+           ======================================== */
+        .welcome-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(20px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            transition: opacity 0.6s ease, visibility 0.6s;
+        }
+
+        .welcome-modal.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .modal-content {
+            text-align: center;
+            padding: 50px;
+            max-width: 500px;
+        }
+
+        .modal-snoopy {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        .modal-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--color-cream);
+            margin-bottom: 15px;
+        }
+
+        .modal-subtitle {
+            font-family: 'Caveat', cursive;
+            font-size: 1.3rem;
+            color: var(--color-cream-dark);
+            margin-bottom: 30px;
+        }
+
+        .modal-btn {
+            padding: 15px 40px;
+            background: var(--snoopy-red);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .modal-btn:hover {
+            background: var(--snoopy-red-light);
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(196, 30, 58, 0.5);
+        }
+
+        /* ========================================
+           RESPONSIVE
+           ======================================== */
+        @media (max-width: 768px) {
+            .counter-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                flex-direction: row !important;
+            }
+
+            .timeline-marker {
+                left: 30px;
+            }
+
+            .timeline-content {
+                width: calc(100% - 80px);
+                margin-left: 80px !important;
+                margin-right: 0 !important;
+            }
+
+            .photo-gallery {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+            }
+
+            .photo-card {
+                height: 420px;
+            }
+
+            .poem-container {
+                padding: 30px 20px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- MODAL DE BIENVENIDA -->
+    <div class="welcome-modal" id="welcomeModal">
+        <div class="modal-content glass-card">
+            <div class="modal-snoopy heartbeat">💖</div>
+            <h2 class="modal-title elegant-font">Tengo algo que decirte...</h2>
+            <p class="modal-subtitle">Prepara tu corazón, es algo muy especial</p>
+            <button class="modal-btn" onclick="closeModal()">
+                💌 Abrir mi corazón
+            </button>
+        </div>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- HERO -->
+        <header class="hero-section" id="inicio">
+            <div class="hero-content">
+                <p class="hero-pretitle">— Una dedicatoria hecha con el alma —</p>
+                <h1 class="main-title elegant-font glow-text">Para Ti</h1>
+                <p class="subtitle">Porque hay cosas que no se dicen, pero se sienten en cada latido</p>
+                
+                <div class="special-date-container glass-card">
+                    <div class="special-date-icon">⭐</div>
+                    <p class="special-date-text">Desde el 14 de Febrero de 2026</p>
+                    <p class="special-date-subtext">El día que mi mundo cambió para siempre</p>
+                </div>
+                
+                <div class="hero-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-heart heartbeat">❤</span>
+                    <span class="divider-line"></span>
+                </div>
+                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">Hecho con todo el amor por <strong>Samuel</strong>, desde Ventanas 💕</p>
+            </div>
+        </header>
+
+        <!-- CONTADOR -->
+        <section class="counter-section" id="contador">
+            <div class="counter-container glass-card">
+                <span class="section-number">01</span>
+                <h2 class="section-title elegant-font">Tiempo a tu lado</h2>
+                <div class="counter-grid">
+                    <div class="counter-item"><span class="counter-number" id="days">0</span><span class="counter-label">Días</span></div>
+                    <div class="counter-item"><span class="counter-number" id="hours">0</span><span class="counter-label">Horas</span></div>
+                    <div class="counter-item"><span class="counter-number" id="minutes">0</span><span class="counter-label">Minutos</span></div>
+                    <div class="counter-item"><span class="counter-number" id="seconds">0</span><span class="counter-label">Segundos</span></div>
+                </div>
+                <p class="counter-subtitle">...y cada uno ha valido la pena 💕</p>
+            </div>
+        </section>
+
+        <!-- POEMA -->
+        <section class="poem-section" id="poema">
+            <div class="poem-container glass-card">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title elegant-font">Me gustas, y quiero que lo sepas</h2>
+                </div>
+                <article class="poem-text">
+                    <p>Hay algo en ti que no sé explicar, una forma tan bonita de hablar, que sin darme cuenta, entre risas y amistad, te fuiste convirtiendo en alguien especial.</p>
+                    <p>Me gusta tu sonrisa, tu forma de ser, y esas pequeñas cosas que me hacen querer quedarme contigo un ratito más, aunque por dentro sienta algo que no sé expresar.</p>
+                    <p>Y aquí viene el miedo que guardo en secreto, ese que me hace callar lo que por ti siento. Porque antes de ser alguien que te quiera de otra manera, soy ese amigo que desea estar contigo donde sea.</p>
+                    <p>No quiero que mis sentimientos cambien tu mirada, ni que nuestra amistad termine siendo nada. Porque si el destino no nos quiere juntos, aun así, tenerte como amiga vale mucho.</p>
+                    <p>Pero sería mentirte si digo que no me gustas, si niego que tu sonrisa mis días disfruta. Hay algo en mi corazón que pronuncia tu nombre, aunque mi boca lo calle y mi mirada lo esconda.</p>
+                    <p>Me gustas, sí, y no sé qué hacer, si arriesgarme a hablarte o dejarlo crecer. Porque quisiera ser mucho más que tu amigo, pero me dolería perder lo bonito que he vivido contigo.</p>
+                    <p>Así que, si algún día descubres lo que siento, no te sientas obligada a cambiar tus sentimientos. Yo no quiero una respuesta por compromiso, quiero que sigas siendo tú, con tu misma sonrisa.</p>
+                    <p>Y si nunca llegamos a ser algo más, quiero que sepas que no te voy a apreciar menos jamás. Porque entre todas las cosas que la vida me ha dado, tu amistad es un tesoro que no quiero perder por haberte amado.</p>
+                </article>
+                <div class="poem-footer">
+                    <div class="signature">
+                        <span class="signature-text romantic-font">Con todo mi corazón, Samuel</span>
+                        <span class="signature-heart heartbeat">❤</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RAZONES -->
+        <section class="reasons-section" id="razones">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title elegant-font glow-text">Razones por las que te amo</h2>
+                <p class="section-subtitle">Podría escribir un millón, pero empecemos por estas...</p>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card glass-card">
+                    <span class="reason-icon">✨</span>
+                    <h3 class="elegant-font">Tu risa</h3>
+                    <p>Es mi sonido favorito en todo el universo. Capaz de arreglar cualquier mal día en segundos.</p>
+                </div>
+                <div class="reason-card glass-card">
+                    <span class="reason-icon">️</span>
+                    <h3 class="elegant-font">Tu apoyo</h3>
+                    <p>Porque incluso cuando yo dudo de mí, tú siempre ves lo mejor de mí. Eres mi equipo.</p>
+                </div>
+                <div class="reason-card glass-card">
+                    <span class="reason-icon">👀</span>
+                    <h3 class="elegant-font">Cómo me miras</h3>
+                    <p>En tus ojos encuentro un hogar que no sabía que estaba buscando hasta que te conocí.</p>
+                </div>
+                <div class="reason-card glass-card">
+                    <span class="reason-icon">💻</span>
+                    <h3 class="elegant-font">Eres mi "código" favorito</h3>
+                    <p>Como desarrollador, he creado muchas cosas, pero tú eres el único milagro que no necesita código para ser perfecto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA CON FLIP 3D -->
+        <section class="gallery-section" id="galeria">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title elegant-font">Momentos que atesoro</h2>
+                <p class="section-subtitle">Haz clic en las fotos para descubrir el mensaje oculto</p>
+            </div>
+            <div class="photo-gallery">
+                
+                <!-- FOTO 1 -->
+                <div class="photo-card" tabindex="0" role="button" aria-label="Ver mensaje oculto" 
+                     onclick="this.classList.toggle('flipped')" 
+                     onkeydown="if(event.key === 'Enter') this.classList.toggle('flipped')">
+                    <div class="photo-card-inner">
+                        <div class="photo-front">
+                            <img src="img/foto1.jpg" 
+                                 alt="Nuestro momento especial" 
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterbegin', '<div class=&quot;photo-fallback&quot;>💕</div>');">
+                            <div class="photo-overlay"><span>Toca aquí</span></div>
+                        </div>
+                        <div class="photo-back">
+                            <div class="poem-mini">
+                                <span class="poem-quote">"</span>
+                                <p>Tu sonrisa ilumina mis días grises. Ahora eres mi lugar favorito en el mundo.</p>
+                                <span class="poem-quote">"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOTO 2 -->
+                <div class="photo-card" tabindex="0" role="button" aria-label="Ver mensaje oculto" 
+                     onclick="this.classList.toggle('flipped')" 
+                     onkeydown="if(event.key === 'Enter') this.classList.toggle('flipped')">
+                    <div class="photo-card-inner">
+                        <div class="photo-front">
+                            <img src="img/foto2.jpg" 
+                                 alt="Un momento especial juntos" 
+                                 loading="lazy"
+                                 onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterbegin', '<div class=&quot;photo-fallback&quot;></div>');">
+                            <div class="photo-overlay"><span>Toca aquí</span></div>
+                        </div>
+                        <div class="photo-back">
+                            <div class="poem-mini">
+                                <span class="poem-quote">"</span>
+                                <p>No necesito grandes aventuras, solo tu compañía para que todo sea perfecto.</p>
+                                <span class="poem-quote">"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p style="text-align: center; margin-top: 40px; font-family: 'Caveat', cursive; font-size: 1.3rem; color: var(--color-cream-dark);">
+                ✨ Pronto agregaré más momentos aquí ✨
+            </p>
+        </section>
+
+        <!-- PROMESAS -->
+        <section class="promises-section" id="promesas">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title elegant-font">Mis Promesas Para Ti</h2>
+                <p class="section-subtitle">No son solo palabras, son compromisos de mi corazón</p>
+            </div>
+            <ul class="promises-list">
+                <li class="promise-item">
+                    <span class="promise-check">❤️</span>
+                    <span class="promise-text">Prometo escucharte, no solo para responder, sino para entenderte de verdad.</span>
+                </li>
+                <li class="promise-item">
+                    <span class="promise-check">❤️</span>
+                    <span class="promise-text">Prometo ser tu refugio en los días grises y tu mayor animador en los días de sol.</span>
+                </li>
+                <li class="promise-item">
+                    <span class="promise-check">❤️</span>
+                    <span class="promise-text">Prometo elegirte cada día, en las decisiones grandes y en las pequeñas.</span>
+                </li>
+                <li class="promise-item">
+                    <span class="promise-check">❤️</span>
+                    <span class="promise-text">Prometo que, pase lo que pase, siempre vas a saber cuánto vales para mí.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- HISTORIA -->
+        <section class="timeline-section" id="historia">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title elegant-font">Nuestra Historia</h2>
+                <p class="section-subtitle">Los momentos que me hicieron sentir esto por ti</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">14 de Febrero, 2026</span>
+                        <h3 class="timeline-title">Cuando te conocí</h3>
+                        <p class="timeline-text">No sabía que ese día de San Valentín cambiaría todo. Tu forma de ser me atrapó desde el primer momento.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">El momento exacto</span>
+                        <h3 class="timeline-title">Cuando me gustaste de verdad</h3>
+                        <p class="timeline-text">Una sonrisa tuya, una mirada, y supe que ya no eras solo una amiga para mí. Algo cambió en mi interior.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">La decisión</span>
+                        <h3 class="timeline-title">Cuando decidí hacer esta web</h3>
+                        <p class="timeline-text">Pensé: "Soy desarrollador, puedo construir algo único". Así que empecé a escribir código y amor en cada línea.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Hoy</span>
+                        <h3 class="timeline-title">Cuando decidí decírtelo</h3>
+                        <p class="timeline-text">Mereces saber lo especial que eres. Aquí estoy, siendo sincero con todo mi corazón.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARTA -->
+        <section class="letter-section" id="carta">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2 class="section-title elegant-font">Una Carta Para Ti</h2>
+                <p class="section-subtitle">Haz clic en el sobre para abrir</p>
+            </div>
+            <div class="envelope-container" onclick="toggleEnvelope()" tabindex="0" role="button" aria-label="Abrir carta" onkeydown="if(event.key === 'Enter') toggleEnvelope()">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body">
+                        <article class="letter">
+                            <div class="letter-content">
+                                <p class="letter-greeting romantic-font">Hola, mi persona favorita,</p>
+                                <p class="letter-text">Si estás leyendo esto, es porque te atreviste a abrir mi corazón. No sé qué sientas al leer estas palabras, pero quiero que sepas que cada una es 100% sincera.</p>
+                                <p class="letter-text">Me gustas. Me gustas de una forma que no sé explicar, de una forma que me asusta pero también me hace la persona más feliz del mundo.</p>
+                                <p class="letter-text">Y si no sientes lo mismo, está bien. De verdad. Porque tenerte en mi vida, aunque sea como amiga, ya es más de lo que merezco.</p>
+                                <p class="letter-closing">Gracias por existir.<br><span class="letter-signature romantic-font">— Con todo mi amor, Samuel</span></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESPUESTA FINAL -->
+        <section class="dark-section interactive-section" id="respuesta">
+            <div class="section-header">
+                <span class="section-number">08</span>
+                <h2 class="section-title elegant-font">¿Y ahora qué?</h2>
+                <p class="section-subtitle">Sin presión, de verdad. Sé sincera, que yo te voy a entender</p>
+            </div>
+            <div class="answer-container glass-card">
+                <p class="answer-prompt">Toca la opción que más se acerque a lo que sientes:</p>
+                <div class="answer-btns">
+                    <button class="answer-btn btn-love" onclick="handleAnswer(0)">
+                         Yo también siento algo especial por ti
+                    </button>
+                    <button class="answer-btn btn-think" onclick="handleAnswer(1)">
+                         Necesito un poco de tiempo para pensarlo
+                    </button>
+                    <button class="answer-btn btn-friend" onclick="handleAnswer(2)">
+                        🫂 Prefiero que sigamos siendo amigos
+                    </button>
+                </div>
+                <div class="answer-feedback hidden" id="answerFeedback" style="display: none;">
+                    <p id="feedbackText"></p>
+                    <div id="waBox" class="wa-box" style="display: none;">
+                        <p style="font-size: 0.9rem; margin-bottom: 10px; color: var(--color-cream-dark);">Si quieres, puedes escribirme algo:</p>
+                        <textarea id="waText" placeholder="Escríbeme lo que quieras decirme..." rows="4"></textarea>
+                        <button class="modal-btn" onclick="sendWA()" style="background: #25D366;">
+                             Enviar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENSAJE FINAL -->
+        <section class="final-message">
+            <div class="message-container">
+                <div class="section-header">
+                    <span class="section-number">09</span>
+                    <h2 class="section-title elegant-font glow-text">Y para cerrar...</h2>
+                </div>
+                <div style="margin: 40px 0;">
+                    <p class="final-line romantic-font" style="font-size: 2rem;">Sí, me gustas. Mucho.</p>
+                    <p class="final-line">Pero más que eso, valoro lo que tenemos.</p>
+                    <p class="final-line">Así que esto queda aquí, entre estas letras,</p>
+                    <p class="final-line">como un secreto que ahora compartimos.</p>
+                    <p class="final-line highlight heartbeat">❤ Gracias por existir en mi vida ❤</p>
+                </div>
+                <div class="hero-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-heart">❤</span>
+                    <span class="divider-line"></span>
+                </div>
+                <blockquote class="final-quote">"A veces el amor más bonito es el que se queda en silencio, hasta que el corazón no puede más"</blockquote>
+                <div class="final-signature">
+                    <p class="signature-name romantic-font">Con todo mi corazón, Samuel</p>
+                    <p class="signature-date">
+                        <time datetime="2026-02-14">14 de Febrero, 2026</time> - Hoy y siempre, desde Ventanas 💕
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-heart heartbeat">💖</div>
+        <p class="footer-text">Hecho con todo el corazón y un poco de código</p>
+        <p class="footer-disclaimer">Desde el 14 de Febrero de 2026 💕</p>
+        <a href="#inicio" class="footer-link">Volver al inicio</a>
+        <a href="galaxia/index.html" class="footer-link">Ver la galaxia</a>
+        <a href="dashboard.html" class="footer-link">panel de admin</a>
+        <p style="font-size: 0.75rem; opacity: 0.6; margin-top: 30px;">
+            &copy; 2026 Dedicatoria de Samuel. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Volver al inicio">
+        ⬆
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // ========================================
+        // MODAL DE BIENVENIDA
+        // ========================================
+        function closeModal() {
+            const modal = document.getElementById('welcomeModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            sessionStorage.setItem('hasVisited', 'true');
+        }
+
+        // Mostrar modal solo la primera vez
+        if (sessionStorage.getItem('hasVisited')) {
+            document.getElementById('welcomeModal').classList.add('hidden');
+        } else {
+            document.body.style.overflow = 'hidden';
+        }
+
+        // ========================================
+        // CARTA INTERACTIVA
+        // ========================================
+        function toggleEnvelope() {
+            const envelope = document.getElementById('envelope');
+            envelope.classList.toggle('open');
+        }
+
+        // ========================================
+        // CONTADOR DE TIEMPO
+        // ========================================
+        function initCounter() {
+            const startDate = new Date('2026-02-14T00:00:00').getTime();
+            
+            function updateCounter() {
+                const now = new Date().getTime();
+                const diff = Math.abs(now - startDate);
+                
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = days;
+                document.getElementById('hours').textContent = hours;
+                document.getElementById('minutes').textContent = minutes;
+                document.getElementById('seconds').textContent = seconds;
+            }
+            
+            updateCounter();
+            setInterval(updateCounter, 1000);
+        }
+        initCounter();
+
+        // ========================================
+        // BOTÓN VOLVER ARRIBA
+        // ========================================
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('backToTop');
+            if (window.scrollY > 500) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // ========================================
+        // RESPUESTA FINAL
+        // ========================================
+        function handleAnswer(choice) {
+            document.querySelectorAll('.answer-btn').forEach(btn => {
+                btn.style.pointerEvents = 'none';
+                btn.style.opacity = '0.6';
+            });
+            
+            const feedback = document.getElementById('answerFeedback');
+            const text = document.getElementById('feedbackText');
+            const waBox = document.getElementById('waBox');
+            
+            feedback.style.display = 'block';
+            waBox.style.display = 'none';
+            
+            let decisionText = "";
+            
+            if (choice === 0) {
+                decisionText = "💖 Siente algo especial";
+                text.innerHTML = "¡Esto me llena de una felicidad que no puedo explicar! 💖<br>Prometo cuidarte y hacerte sonreír cada día.";
+                waBox.style.display = 'block';
+                createConfetti();
+            } else if (choice === 1) {
+                decisionText = "🤔 Necesita tiempo";
+                text.innerHTML = "Lo entiendo perfectamente. Tómate todo el tiempo que necesites. 🤔<br>No hay prisa, yo estaré aquí cuando estés lista.";
+            } else {
+                decisionText = "🫂 Prefiere amistad";
+                text.innerHTML = "Lo respeto y lo entiendo. Tu amistad es lo más valioso que tengo. 🫂<br>Gracias por ser sincera.";
+            }
+
+            // Guardar en localStorage
+            localStorage.setItem('finalAnswer', JSON.stringify({
+                decision: decisionText,
+                fecha: new Date().toLocaleString('es-EC')
+            }));
+        }
+
+        function sendWA() {
+            const message = document.getElementById('waText').value;
+            if (!message.trim()) {
+                alert('Por favor, escribe algo antes de enviar 😊');
+                return;
+            }
+            
+            const phone = '573005605697'; // Cambia esto al número de teléfono deseado
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+
+        // ========================================
+        // CONFETI
+        // ========================================
+        function createConfetti() {
+            const colors = ['#C41E3A', '#FFD700', '#F5F1E8', '#E8384F', '#FF69B4'];
+            const container = document.createElement('div');
+            container.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:9999; overflow:hidden;';
+            document.body.appendChild(container);
+            
+            for (let i = 0; i < 100; i++) {
+                const conf = document.createElement('div');
+                const size = Math.random() * 10 + 5;
+                conf.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    background: ${colors[Math.floor(Math.random() * colors.length)]};
+                    left: ${Math.random() * 100}vw;
+                    top: -20px;
+                    border-radius: ${Math.random() > 0.5 ? '50%' : '2px'};
+                    animation: fall ${Math.random() * 3 + 2}s linear forwards;
+                `;
+                container.appendChild(conf);
+            }
+            
+            setTimeout(() => container.remove(), 5000);
+        }
+
+        // Inyectar animación de confeti
+        if (!document.getElementById('confetti-style')) {
+            const style = document.createElement('style');
+            style.id = 'confetti-style';
+            style.textContent = `@keyframes fall { to { transform: translateY(110vh) rotate(720deg); opacity: 0; } }`;
+            document.head.appendChild(style);
+        }
+
+        // ========================================
+        // SCROLL SUAVE PARA ENLACES
+        // ========================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        console.log('%c💖 Hecho con amor por Javier 💖', 'font-size: 20px; color: #C41E3A; font-weight: bold;');
+    </script>
+</body>
+</html>

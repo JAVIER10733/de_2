@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxia De Amor</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icono de la pestaña -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
+</head>
+<body>
+    
+    <!-- Botón para regresar al inicio -->
+    <a href="../index.html" class="back-home-btn">
+        <span class="btn-icon">←</span>
+        <span class="btn-text">Volver al inicio</span>
+    </a>
+
+    <!-- Canvas de la Galaxia 3D -->
+    <canvas id="c"></canvas>
+    
+    <!-- Reproductor de Música -->
+    <div class="player">
+        <button id="play">▶️</button>
+        <div class="progress" id="progress">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="time" id="time">0:00 / 0:00</div>
+    </div>
+    
+    <!-- Audio (Tu enlace de Dropbox) -->
+    <audio id="audio" loop>
+        <source src="https://www.dropbox.com/scl/fi/qfv28rqu6b36jwusao4x4/Love.MP3?rlkey=ptjd053374f028aa4jfcfrfxn&st=1j0j51eo&raw=1" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Three.js y Script personalizado -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/build/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,919 @@
+/* ======================================================================
+   RESPONSIVE ULTRA PREMIUM - Sistema Completo de Adaptación
+   ====================================================================== */
+
+/* ======================================================================
+   VARIABLES RESPONSIVE (Ajustes dinámicos según el tamaño)
+   ====================================================================== */
+@media (max-width: 1024px) {
+  :root {
+    --space-2xl: 5rem;
+    --space-xl: 3.5rem;
+    --space-lg: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-2xl: 4rem;
+    --space-xl: 3rem;
+    --space-lg: 2rem;
+    --space-md: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --space-2xl: 3rem;
+    --space-xl: 2.5rem;
+    --space-lg: 1.8rem;
+    --space-md: 1.2rem;
+    --space-sm: 0.8rem;
+  }
+}
+
+/* ======================================================================
+   TABLETS Y LAPTOPS PEQUEÑAS (1024px)
+   ====================================================================== */
+@media (max-width: 1024px) {
+  /* Timeline */
+  .timeline::before {
+    left: 30px;
+  }
+  
+  .timeline-item {
+    flex-direction: row !important;
+  }
+  
+  .timeline-marker {
+    left: 30px;
+  }
+  
+  .timeline-content {
+    width: calc(100% - 80px);
+    margin-left: 80px !important;
+    margin-right: 0 !important;
+  }
+
+  /* Navegación */
+  .nav-menu {
+    gap: var(--space-sm);
+  }
+  
+  .nav-link {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+  }
+
+  /* Grids */
+  .moments-grid,
+  .reasons-grid,
+  .future-grid,
+  .promises-grid,
+  .wishes-grid,
+  .quotes-carousel,
+  .constellation-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  /* Galería */
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+  }
+
+  /* Contador */
+  .counter-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Tarot */
+  .tarot-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 700px;
+  }
+}
+
+/* ======================================================================
+   MÓVILES Y TABLETS PEQUEÑAS (768px)
+   ====================================================================== */
+@media (max-width: 768px) {
+  /* Navegación móvil */
+  .nav-menu {
+    display: none;
+  }
+  
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* Galería */
+  .photo-gallery {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+  
+  .photo-card {
+    height: 450px;
+  }
+
+  /* Todos los grids a 1 columna */
+  .moments-grid,
+  .reasons-grid,
+  .future-grid,
+  .promises-grid,
+  .wishes-grid,
+  .quotes-carousel,
+  .constellation-grid,
+  .tarot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contador responsive */
+  .counter-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+  
+  .counter-item {
+    padding: var(--space-md);
+  }
+
+  /* Fecha especial */
+  .special-date-container {
+    padding: var(--space-sm) var(--space-md);
+    margin: var(--space-sm) auto;
+  }
+  
+  .special-date-text {
+    font-size: 1.2rem;
+  }
+  
+  .special-date-subtext {
+    font-size: 1rem;
+  }
+
+  /* Reproductor de música */
+  .music-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .control-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Poema */
+  .poem-container {
+    padding: var(--space-lg);
+  }
+
+  /* Sobre/Carta */
+  .envelope {
+    height: 400px;
+  }
+  
+  .envelope-body {
+    height: 280px;
+  }
+  
+  .letter {
+    height: 260px;
+    padding: var(--space-md);
+  }
+
+  /* Vinyl */
+  .vinyl-record {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .vinyl-center {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Modal de subida */
+  .upload-modal-content {
+    padding: var(--space-lg);
+  }
+  
+  .upload-modal-buttons {
+    flex-direction: column;
+  }
+  
+  .upload-button {
+    padding: var(--space-lg);
+  }
+  
+  .upload-icon {
+    font-size: 3rem;
+  }
+  
+  .upload-text {
+    font-size: 1.5rem;
+  }
+  
+  .upload-hint {
+    font-size: 1rem;
+  }
+
+  /* Botón volver arriba */
+  .back-to-top {
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Juego */
+  .game-options {
+    grid-template-columns: 1fr;
+  }
+
+  /* Snoopy del hero */
+  .hero-snoopy {
+    font-size: 5rem;
+    right: 5%;
+    bottom: 50px;
+  }
+
+  /* ¿Qué prefieres? */
+  .wyr-options {
+    grid-template-columns: 1fr;
+  }
+
+  /* Quiz */
+  .quiz-container {
+    padding: var(--space-md);
+  }
+
+  /* Respuesta final */
+  .answer-btns {
+    gap: var(--space-sm);
+  }
+}
+
+/* ======================================================================
+   MÓVILES MUY PEQUEÑOS (480px)
+   ====================================================================== */
+@media (max-width: 480px) {
+  /* Títulos */
+  .main-title {
+    letter-spacing: 0.05em;
+    font-size: 3.5rem;
+  }
+  
+  .section-title {
+    margin-bottom: var(--space-sm);
+    font-size: 1.8rem;
+  }
+
+  /* Poema */
+  .poem-text p {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+  
+  .poem-text p:first-of-type::first-letter {
+    font-size: 4rem;
+  }
+
+  /* Fotos */
+  .photo-card {
+    height: 400px;
+  }
+
+  /* Modal */
+  .modal-title {
+    font-size: 2rem;
+  }
+  
+  .modal-heart,
+  .modal-snoopy {
+    font-size: 4rem;
+  }
+
+  /* Subida */
+  .upload-button {
+    padding: var(--space-md);
+  }
+  
+  .upload-text {
+    font-size: 1.3rem;
+  }
+  
+  .upload-hint {
+    font-size: 0.9rem;
+  }
+
+  /* Mensaje final */
+  .final-line {
+    font-size: 1.5rem;
+  }
+  
+  .final-line.highlight {
+    font-size: 1.8rem;
+  }
+
+  /* Timeline */
+  .timeline-content {
+    padding: var(--space-sm);
+  }
+
+  /* Tarjetas */
+  .promise-card,
+  .reason-card,
+  .future-card,
+  .wish-card,
+  .quote-card,
+  .star-card {
+    padding: var(--space-md);
+  }
+
+  /* Reproductor */
+  .music-player {
+    padding: var(--space-lg);
+  }
+
+  /* Juego */
+  .game-container {
+    padding: var(--space-md);
+  }
+  
+  .question-text {
+    font-size: 1.3rem;
+  }
+
+  /* Contador */
+  .counter-number {
+    font-size: 2.5rem;
+  }
+  
+  .counter-label {
+    font-size: 0.75rem;
+  }
+  
+  .counter-item {
+    padding: var(--space-sm);
+  }
+
+  /* Fecha especial */
+  .special-date-icon {
+    font-size: 2rem;
+  }
+  
+  .special-date-text {
+    font-size: 1rem;
+  }
+  
+  .special-date-subtext {
+    font-size: 0.9rem;
+  }
+
+  /* Firma */
+  .signature-date {
+    font-size: 1rem;
+  }
+
+  /* Tarot */
+  .tarot-card {
+    height: 250px;
+  }
+
+  /* ¿Qué prefieres? */
+  .wyr-card {
+    padding: var(--space-md);
+  }
+  
+  .wyr-question {
+    font-size: 1.3rem;
+  }
+  
+  .wyr-btn {
+    padding: var(--space-md);
+    font-size: 0.95rem;
+  }
+
+  /* Quiz */
+  .quiz-question h3 {
+    font-size: 1.2rem;
+  }
+  
+  .quiz-options button {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  /* Respuesta */
+  .answer-btn {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  .answer-prompt {
+    font-size: 1.3rem;
+  }
+}
+
+/* ======================================================================
+   PANTALLAS ULTRA ANCHAS (1600px+)
+   ====================================================================== */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+  
+  .main-title {
+    font-size: 10rem;
+  }
+  
+  .photo-gallery {
+    max-width: 1200px;
+  }
+  
+  .moments-grid,
+  .reasons-grid,
+  .future-grid,
+  .promises-grid {
+    max-width: 1400px;
+  }
+  
+  .timeline {
+    max-width: 1000px;
+  }
+}
+
+/* ======================================================================
+   PANTALLAS GIGANTES (1920px+)
+   ====================================================================== */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+  
+  .main-title {
+    font-size: 12rem;
+  }
+  
+  .section-title {
+    font-size: 3.5rem;
+  }
+  
+  .photo-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+  }
+}
+
+/* ======================================================================
+   ORIENTACIÓN LANDSCAPE EN MÓVILES
+   ====================================================================== */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-section {
+    padding: var(--space-lg) var(--space-md);
+  }
+  
+  .main-title {
+    font-size: 3.5rem;
+  }
+  
+  section {
+    padding: var(--space-lg) 0;
+  }
+  
+  .photo-card {
+    height: 350px;
+  }
+  
+  .envelope {
+    height: 350px;
+  }
+  
+  .hero-snoopy {
+    display: none;
+  }
+  
+  /* Ocultar elementos decorativos en landscape */
+  .clouds-container,
+  .particles-container {
+    display: none;
+  }
+}
+
+/* ======================================================================
+   DISPOSITIVOS ESPECÍFICOS
+   ====================================================================== */
+
+/* iPhone SE / Móviles pequeños */
+@media (max-width: 375px) {
+  .main-title {
+    font-size: 3rem;
+  }
+  
+  .counter-number {
+    font-size: 2.2rem;
+  }
+  
+  .nav-menu {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* iPhone 12/13/14 Pro Max */
+@media (min-width: 428px) and (max-width: 430px) {
+  .photo-gallery {
+    max-width: 400px;
+  }
+}
+
+/* iPad Mini */
+@media (min-width: 744px) and (max-width: 768px) {
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+  }
+  
+  .moments-grid,
+  .reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* iPad Pro */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .container {
+    max-width: 95%;
+  }
+  
+  .photo-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+  }
+}
+
+/* ======================================================================
+   MENÚ HAMBURGUESA PREMIUM (MÓVIL)
+   ====================================================================== */
+@media (max-width: 1024px) {
+  /* Menú lateral deslizante */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    max-width: 350px;
+    height: 100vh;
+    background: rgba(15, 5, 10, 0.95);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    border-left: 1px solid rgba(196, 30, 58, 0.3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 80px 30px 30px;
+    transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 999;
+    box-shadow: -10px 0 60px rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+    display: flex;
+  }
+
+  /* Menú activo */
+  .nav-menu.active {
+    right: 0;
+  }
+
+  /* Enlaces del menú */
+  .nav-menu li {
+    width: 100%;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Animación escalonada */
+  .nav-menu.active li {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .nav-menu.active li:nth-child(1) { transition-delay: 0.1s; }
+  .nav-menu.active li:nth-child(2) { transition-delay: 0.15s; }
+  .nav-menu.active li:nth-child(3) { transition-delay: 0.2s; }
+  .nav-menu.active li:nth-child(4) { transition-delay: 0.25s; }
+  .nav-menu.active li:nth-child(5) { transition-delay: 0.3s; }
+  .nav-menu.active li:nth-child(6) { transition-delay: 0.35s; }
+  .nav-menu.active li:nth-child(7) { transition-delay: 0.4s; }
+  .nav-menu.active li:nth-child(8) { transition-delay: 0.45s; }
+  .nav-menu.active li:nth-child(9) { transition-delay: 0.5s; }
+  .nav-menu.active li:nth-child(10) { transition-delay: 0.55s; }
+
+  /* Estilos de enlaces */
+  .nav-link {
+    display: block;
+    font-size: 1.1rem;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--color-cream);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s;
+  }
+
+  .nav-link::before {
+    display: none;
+  }
+
+  .nav-link:hover {
+    color: var(--snoopy-red-light);
+    padding-left: 10px;
+    background: rgba(196, 30, 58, 0.1);
+  }
+
+  /* Botón hamburguesa */
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 1001;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .nav-toggle .bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-cream);
+    border-radius: 2px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: center;
+  }
+
+  /* Transformación a X */
+  .nav-toggle.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+    background-color: var(--snoopy-red-light);
+  }
+
+  .nav-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  .nav-toggle.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+    background-color: var(--snoopy-red-light);
+  }
+
+  /* Overlay oscuro */
+  .nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+  }
+
+  .nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Ajustes para móviles muy pequeños */
+@media (max-width: 480px) {
+  .nav-menu {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    padding: 16px 0;
+  }
+}
+
+/* ======================================================================
+   ACCESIBILIDAD: REDUCIR MOVIMIENTO
+   ====================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .particle,
+  .cloud,
+  .orb {
+    display: none;
+  }
+  
+  .nav-menu {
+    transition: none;
+  }
+}
+
+/* ======================================================================
+   ALTO CONTRASTE
+   ====================================================================== */
+@media (prefers-contrast: high) {
+  .section-title {
+    color: #fff;
+  }
+  
+  .poem-text p {
+    color: #fff;
+  }
+  
+  .control-btn {
+    border: 3px solid #fff;
+  }
+  
+  .photo-front img {
+    filter: none;
+  }
+  
+  .nav-link {
+    color: #fff;
+  }
+  
+  .nav-link:hover {
+    color: #ff4d6d;
+  }
+}
+
+/* ======================================================================
+   MODO OSCURO FORZADO
+   ====================================================================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-black: #000;
+    --color-dark-gray: #0a0a0a;
+  }
+}
+
+/* ======================================================================
+   IMPRESIÓN
+   ====================================================================== */
+@media print {
+  /* Ocultar elementos interactivos */
+  .particles-container,
+  .clouds-container,
+  .music-section,
+  .control-btn,
+  .photo-overlay,
+  .back-to-top,
+  .upload-container,
+  .game-section,
+  .guestbook-section,
+  .counter-section,
+  .nav-menu,
+  .nav-toggle,
+  .scroll-indicator,
+  .welcome-modal {
+    display: none !important;
+  }
+
+  /* Estilos base para impresión */
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 12pt;
+  }
+
+  section {
+    box-shadow: none;
+    page-break-inside: avoid;
+    margin-bottom: 2rem;
+  }
+
+  .photo-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .main-title {
+    font-size: 3rem;
+    color: #000;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    color: #000;
+  }
+
+  .poem-text p {
+    color: #000;
+    font-size: 11pt;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .timeline::before {
+    background: #000;
+  }
+
+  .timeline-marker {
+    background: #000;
+  }
+}
+
+/* ======================================================================
+   SOPORTE PARA PANTALLAS TÁCTILES
+   ====================================================================== */
+@media (hover: none) and (pointer: coarse) {
+  /* Desactivar efectos hover en dispositivos táctiles */
+  .glass-card:hover,
+  .reason-card:hover,
+  .promise-item:hover,
+  .photo-card:hover,
+  .tarot-card:hover {
+    transform: none;
+  }
+  
+  /* Aumentar tamaño de áreas táctiles */
+  .nav-link,
+  .control-btn,
+  .answer-btn,
+  .wyr-btn,
+  .quiz-options button {
+    min-height: 44px;
+  }
+  
+  /* Mejorar feedback táctil */
+  .control-btn:active,
+  .answer-btn:active,
+  .wyr-btn:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+/* ======================================================================
+   SOPORTE PARA PANTALLAS RETINA
+   ====================================================================== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .photo-card img,
+  .photo-thumb {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* ======================================================================
+   OPTIMIZACIÓN PARA DISPOSITIVOS GAMA BAJA
+   ====================================================================== */
+@media (max-width: 768px) and (max-device-memory: 4GB) {
+  /* Reducir efectos pesados */
+  .glass-card,
+  .reason-card,
+  .promise-item {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  
+  .orb,
+  .particle {
+    display: none;
+  }
+  
+  /* Simplificar animaciones */
+  * {
+    animation-duration: 0.3s !important;
+  }
+}
+
+/* ======================================================================
+   MODO AHORRO DE ENERGÍA
+   ====================================================================== */
+@media (prefers-reduced-transparency: reduce) {
+  .glass-card,
+  .nav-menu,
+  .welcome-modal {
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
